@@ -4,8 +4,7 @@ int a[100];
 void quickSort(int l, int r)
 {
     int x = a[l + (r - l) / 2];
-    //запись эквивалентна (l+r)/2, 
-    //но не вызввает переполнения на больших данных
+  
     int i = l;
     int j = r;
     while(i <= j)
@@ -27,7 +26,7 @@ void quickSort(int l, int r)
 }
 int main()
 {
-    int n;//количество элементов в массиве
+    int n;
     cin >> n;
     for(int i = 0; i < n; i++)
     {
